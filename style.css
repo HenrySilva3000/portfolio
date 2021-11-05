@@ -15,11 +15,15 @@
     --font-action: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .hamburguer{
     width: 2rem;
     height: 2rem;
     position: fixed;
-    z-index: 100;
+    z-index: 151;
     right: 2rem;
     top: 2rem;
     display: flex;
@@ -183,6 +187,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 0.5s; /* right 0.5s */
+    z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -223,7 +228,7 @@ header {
 .social-media i {
     background-color: #6a3093;
     color: rgba(255, 255, 255, 1);
-    height: 2.5rem;
+    height: 2.57rem;
     width: 2.5rem;
     font-size: 2.1rem;
     display: flex;
@@ -479,7 +484,7 @@ header {
     border-bottom: 1.5px dashed #636363;
     height: 3rem;
     outline: none;
-    margin: 2rem 0;
+    margin: 1.4rem 0;
 }
 
 .field-label {
@@ -506,7 +511,7 @@ header {
     height: 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
-    margin-top: -0.8rem;
+    margin-top: 1rem;
 }
 
 .sessao-orcamento {
@@ -545,7 +550,8 @@ header {
 }
 
 .sessao-orcamento form {
-    margin: 4rem; /* 4 x 16 = 64 (conferir o tamanho da margem no inspect element */
+    margin: 4rem;
+    margin-top: 9rem; /* 4 x 16 = 64 (conferir o tamanho da margem no inspect element */
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
@@ -573,4 +579,52 @@ header {
     padding: 1rem;
     cursor: pointer;
     grid-column: 2; /* A coluna do botão no grid vai ser a coluna 2 */
+}
+
+footer {
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: #DA22FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9733EE, #DA22FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.6rem #00000009;
 }
